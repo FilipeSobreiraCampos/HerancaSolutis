@@ -1,33 +1,28 @@
 package Exercicio1;
 
 public class Pessoa {
-    // Atributos encapsulados
     private String nome;
     private String endereco;
     private String telefone;
 
-    // Construtor padrão
     public Pessoa() {
         this.nome = "";
         this.endereco = "";
         this.telefone = "";
     }
 
-    // Construtor com parâmetros
     public Pessoa(String nome, String endereco, String telefone) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
     }
 
-    // Construtor com nome e telefone
     public Pessoa(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
-        this.endereco = ""; // Valor padrão
+        this.endereco = "";
     }
 
-    // Getters e Setters
     public String getNome() {
         return nome;
     }
